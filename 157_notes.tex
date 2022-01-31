@@ -1,0 +1,161 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+
+\usepackage[margin=2cm]{geometry}
+\usepackage{wrapfig}
+\usepackage{setspace}
+\usepackage{graphicx}
+
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{amssymb}
+\usepackage{gensymb}
+\usepackage{amsmath}[fleqn]
+\usepackage{lipsum}
+\usepackage{cases}
+\usepackage{chemist}
+\usepackage{chemfig}
+\usepackage[version=4]{mhchem}
+\usepackage{chemmacros}
+    \chemsetup{modules={all}}
+\usepackage{lmodern}
+\usepackage{textcomp}
+\usepackage{placeins}
+\usepackage{fancyhdr}
+\usepackage{esvect}
+
+\usepackage{verbatim}
+\usepackage{hyperref}
+\usepackage{multicol}
+\usepackage{multirow}
+\usepackage{cancel}
+
+
+
+\usepackage{tikz}
+\usetikzlibrary{calc}
+
+\usetikzlibrary{math}
+\usetikzlibrary{angles,quotes}
+
+\usetikzlibrary{positioning,shapes,fit,arrows}
+
+
+
+
+
+\usepackage{tkz-euclide}
+\usetikzlibrary{decorations.pathreplacing}
+\usetikzlibrary{decorations.text}
+
+\newcolumntype{P}[1]{>{\centering\arraybackslash}p{#1}}
+
+\renewcommand{\epsilon}{\varepsilon}
+
+
+\newcommand{\Tau}{\mathrm{t}}
+
+
+\newtheorem{remark}{Remark}
+
+\newtheorem{theorem}{Theorem}
+
+\newtheorem{definition}{Definition}
+
+
+\newtheorem{lemma}{Lemma}
+
+\newtheorem{corollary}{Corollary}
+
+
+
+\newcommand{\inn}[1]{\langle #1 \rangle}
+
+\newcommand{\ol}[1]{\overline{#1}}
+
+\newcommand{\norm}[1]{||#1||}
+
+
+
+\newcommand{\C}{\mathbb{C}}
+
+\newcommand{\R}{\mathbb{R}}
+
+\newcommand{\Lc}{\mathcal{L}}
+
+\newcommand{\Pc}{\mathcal{P}}
+
+\newcommand{\spann}{\text{span}}
+
+
+\newcommand{\ds}{\displaystyle}
+
+\begin{document}
+\begin{equation}
+\ds \lim_{x\to 0} \frac{1-\cos x}{x^2} = \frac{1}{2} \notag
+\end{equation} 
+
+
+\begin{definition}
+A function $f$: $[a,b]\to \R $ is Sabek integrable if there $\exists  \Pc $ such that the upper sum of circle area - lower sum of circle area is less than any given $\epsilon <0 $ 
+\end{definition}
+
+\begin{theorem}
+For any give $S_{abek}<0 $ 
+\end{theorem}
+
+\section{Fundamental Theorems of Calculus}
+
+\subsection{FTC1}
+
+\[F(x) = \int_a^x f \implies F'(x_0) = f(x_0)\]
+
+\begin{itemize}
+    \item Preconditions:
+    \begin{itemize}
+        \item $f: [a, b] \to \R$ is \textbf{bounded}, \textbf{integrable}, and \textbf{continuous} at $x_0 \in (a, b)$
+        \item $F: [a, b] \to \R$ is defined as $\int_a^x f$ 
+    \end{itemize}
+    \item Implications:
+    \begin{itemize}
+        \item $F$ is differentiable at $x_0 \in (a, b)$
+        \item $F'(x_0) = f(x_0)$
+        \item Loosely: 
+    \end{itemize}
+\end{itemize}
+
+\subsection{FTC2}
+
+
+\[\int_a^b f = F(b) - F(a)\]
+
+\begin{itemize}
+    \item Preconditions:
+    \begin{itemize}
+        \item $f: [a, b] \to \R$ is \textbf{bounded} and \textbf{integrable}
+        \item $F: [a, b] \to \R$ is \textbf{continuous} and \textbf{differentiable} on $(a, b)$
+        \item $F' = f$ on $(a, b)$
+    \end{itemize}
+    \item Implications:
+    \begin{itemize}
+        \item Stated above. 
+    \end{itemize}
+    \item Remarks:
+    \begin{itemize}
+        \item If $f$ is continuous, we can define $F = \int_a^x f$. Then from FTC1, $F'$ is differentiable. 
+    \end{itemize}
+    \item Warnins: 
+    \begin{itemize}
+        \item We need that $f = F'$ is integrable. If we have $F$ continuous and differentiable and $F'$ bounded, then $F'$ integrable \textbf{does not necessarily follow}. See \href{https://en.wikipedia.org/wiki/Volterra%27s_function}{Volterra's function}. 
+    \end{itemize}  
+\end{itemize}
+
+\section{Integration}
+
+\begin{itemize}
+    \item The integral \[\int_0^1 t^\lambda dt\] converges \textbf{if and only if} $\lambda > -1 $. $\lambda = -1$ is the borderline case. 
+    \item The integral \[\int_1^\infty t^\lambda dt\] converges \textbf{if and only if} $\lambda < - 1$.
+\end{itemize}
+
+
+\end{document}
